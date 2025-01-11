@@ -3,99 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyaw Zay Hein - Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Kyaw Zay Hein</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/Profile.jpg" alt="Your Photo" class="avatar">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my journey in the world of Telecommunications</p>
-            <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" class="cta-button" download>Download CV</a>
+        <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/Profile1.jpg" alt="Your Photo" class="avatar">
+        <h1 class="bordered">WELCOME TO MY PORTFOLIO</h1>
+        <p>Are you ready to dive into my journey in telecommunications?</p>
+        <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" class="cta-button" download>Download CV</a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'AboutMe')"><i class="fas fa-user"></i> About Me</button>
+            <button class="tab-button" onclick="openTab(event, 'Contact')"><i class="fas fa-envelope"></i> Contact</button>
+            <button class="tab-button" onclick="openTab(event, 'Skills')"><i class="fas fa-cogs"></i> Skills</button>
+            <button class="tab-button" onclick="openTab(event, 'Education')"><i class="fas fa-graduation-cap"></i> Education</button>
+            <button class="tab-button" onclick="openTab(event, 'Experiences')"><i class="fas fa-briefcase"></i> Experiences</button>
+            <button class="tab-button" onclick="openTab(event, 'Certificates')"><i class="fas fa-certificate"></i> Certificates</button>
         </div>
-    </section>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I have 8 years of experience in telecommunications, working on network operations and team leadership. My expertise lies in optimizing network efficiency and leading projects that bridge technology with real-world impact.</p>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-wrench"></i>
-                <h3>Network Maintenance</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-signal"></i>
-                <h3>Telecom Technologies</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>NMS Operations</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-project-diagram"></i>
-                <h3>Project Coordination</h3>
-            </div>
+        <!-- Tab Contents -->
+        <div id="AboutMe" class="tab-content">
+            <h2>About Me</h2>
+            <p>With 8 years in telecommunications, I’ve navigated the intricate pathways of network operations and team leadership. My mission is to bridge technology and efficiency in every project I undertake.</p>
         </div>
-    </section>
 
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="experience-timeline">
-            <div class="experience-item">
+        <div id="Contact" class="tab-content">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-phone contact-icons"></i> Phone: +959798939984</li>
+                <li><i class="fas fa-envelope contact-icons"></i> Email: kyawzayhein528@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt contact-icons"></i> Address: No. 1123(B), AungThuKha (20) Street, 6 East Ward, Thaketa Township, Yangon, Myanmar</li>
+            </ul>    
+        </div>
+
+        <div id="Skills" class="tab-content">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fas fa-wrench"></i> Network maintenance and troubleshooting</li>
+                <li><i class="fas fa-signal"></i> Telecommunications technologies: RAN/TRAN, DWDM, IP Transmission</li>
+                <li><i class="fas fa-server"></i> NMS server operations</li>
+                <li><i class="fas fa-project-diagram"></i> LSP coordination and management</li>
+                <li><i class="fas fa-users"></i> Team supervision and coordination</li>
+                <li><i class="fas fa-tasks"></i> Technical operations planning and execution</li>
+                <li><i class="fas fa-handshake"></i> Customer relationship management</li>
+                <li><i class="fas fa-brain"></i> Strong problem-solving and decision-making abilities</li>
+                <li><i class="fas fa-comments"></i> Excellent communication and interpersonal skills</li>
+                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+                <li><i class="fas fa-database"></i> ETL Process</li>
+                <li><i class="fas fa-chart-bar"></i> Power BI</li>
+            </ul>
+        </div>
+
+        <div id="Education" class="tab-content">
+            <h2>Education</h2>
+            <p>Bachelor of Engineering (Electronic Communication Engineering), University of Technology (Yatanarpon Cyber City), 2015</p>
+        </div>
+
+        <div id="Experiences" class="tab-content">
+            <h2>Experiences</h2>
+            <div class="sub-tabs">
+                <button class="sub-tab-button active" onclick="openSubTab(event, 'Company1')">ERICSSON Myanmar</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company2')">TMH Public Holding</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company3')">MYTEL Telecom</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company4')">Horizon Telecom</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company5')">Shwe Emperor Group</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company6')">MPT</button>
+            </div>
+            <div id="Company1" class="sub-tab-content">
                 <h3>ERICSSON Myanmar</h3>
                 <p>Field Service Operation Engineer (2015 - 2017)</p>
+                <ul>
+                    <li>Conducted corrective and preventive maintenance with a 3-hour SLA.</li>
+                    <li>Troubleshot and resolved network issues, maintaining operational continuity.</li>
+                    <li>Managed and supervised 115 sites across multiple townships.</li>
+                </ul>
             </div>
-            <div class="experience-item">
+            <div id="Company2" class="sub-tab-content">
+                <h3>TMH Public Holding</h3>
+                <p>FO Transmission Engineer (2017 - 2018)</p>
+                <ul>
+                    <li>Utilized NMS server and devices for network management and configuration.</li>
+                    <li>Managed transmission technologies including Huawei DWDM and ZTE DWDM.</li>
+                    <li>Provided troubleshooting and network support.</li>
+                </ul>
+            </div>
+            <div id="Company3" class="sub-tab-content">
                 <h3>MYTEL Telecom</h3>
                 <p>Operation Control Engineer (2018 - 2021)</p>
+                <ul>
+                    <li>Handled maintenance, emergency cases, and On Air site planning.</li>
+                    <li>Coordinated nationwide BTS site maintenance and ensured SLA compliance.</li>
+                </ul>
             </div>
-            <div class="experience-item">
+            <div id="Company4" class="sub-tab-content">
+                <h3>Horizon Telecom</h3>
+                <p>Operation Supervisor (2022)</p>
+                <ul>
+                    <li>Managed and supervised installation and maintenance teams.</li>
+                    <li>Handled stock and site preparation coordination.</li>
+                    <li>Ensured technical operations and BCCS system knowledge.</li>
+                </ul>
+            </div>
+            <div id="Company5" class="sub-tab-content">
+                <h3>Shwe Emperor Group</h3>
+                <p>FTTX Operation Manager (2022 - 2024)</p>
+                <ul>
+                    <li>Oversaw planning and implementation of FTTx network operations.</li>
+                    <li>Managed teams for FTTx deployment and troubleshooting.</li>
+                    <li>Collaborated with cross-functional teams to optimize network performance.</li>
+                </ul>
+            </div>
+            <div id="Company6" class="sub-tab-content">
                 <h3>MPT</h3>
-                <p>Deputy Manager (2024 - Present)</p>
+                <p>Deputy Manager (Apr 2024 - Present)</p>
+                <ul>
+                    <li>Managed D2D Sales Partners and ensured KPI compliance.</li>
+                    <li>Developed regional sales strategies and oversaw shop channel operations.</li>
+                    <li>Conducted sales agent training and managed complaints resolution.</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <p>Bachelor of Engineering (Electronic Communication Engineering) - University of Technology (Yatanarpon Cyber City), 2015</p>
-    </section>
+        <div id="Certificates" class="tab-content">
+            <h2>Certificates</h2>
+            <div class="sub-tabs">
+                <button class="sub-tab-button active" onclick="openSubTab(event, 'CCNA')">CCNA Certificate</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'BE-EC')">BE(EC)</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Customer-Service')">Customer Service Management</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'English')">English</button>
+            </div>
+            <div id="CCNA" class="sub-tab-content">
+                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CCNA.png" alt="CCNA Certificate" class="responsive-image">
+            </div>
+            <div id="BE-EC" class="sub-tab-content">
+                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/BE(EC).png" alt="BE(EC)" class="responsive-image">
+            </div>    
+            <div id="Customer-Service" class="sub-tab-content">
+                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CustomerServiceManagement(HTI).png" alt="Customer Service Management" class="responsive-image">
+            </div>
+            <div id="English" class="sub-tab-content">
+                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/English.png" alt="English" class="responsive-image">
+            </div>
+        </div>
+    </div>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-            <li><i class="fas fa-phone-alt"></i> +959798939984</li>
-            <li><i class="fas fa-envelope"></i> kyawzayhein528@gmail.com</li>
-            <li><i class="fas fa-map-marker-alt"></i> Yangon, Myanmar</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Kyaw Zay Hein. All rights reserved.</p>
-    </footer>
-
+    <!-- External JS for Interactivity -->
     <script src="scripts.js"></script>
 </body>
 </html>
