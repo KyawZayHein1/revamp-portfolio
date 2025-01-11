@@ -7,20 +7,64 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
     color: #333;
-}
-h1, h2, h3 {
-    font-weight: 600;
+    background-color: #f9f9f9;
 }
 
+/* Hero Section with Video Background */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-content {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.hero .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.hero .cta-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Navbar */
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
 .navbar ul {
@@ -34,87 +78,27 @@ header {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 8px;
     transition: color 0.3s ease;
 }
 .navbar a:hover {
     color: #e74c3c;
 }
 
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?technology,telecom') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
-}
-.hero .avatar {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-.hero .cta-button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-.hero .cta-button:hover {
-    background-color: #c0392b;
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
 
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-.skill-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.skill-card i {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #e74c3c;
-}
-.experience-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.experience-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-list {
-    list-style: none;
-    text-align: left;
-    margin-top: 20px;
-}
-.contact-list li {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.contact-list i {
-    color: #e74c3c;
-    margin-right: 10px;
-}
-
-footer {
-    background-color: #2c3e50;
+/* Dark Mode */
+body.dark-mode {
+    background-color: #181818;
     color: white;
-    text-align: center;
-    padding: 20px;
+}
+body.dark-mode .hero-content {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+body.dark-mode .navbar a:hover {
+    color: #ff6347;
 }
