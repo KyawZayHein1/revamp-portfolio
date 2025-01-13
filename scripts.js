@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Function to toggle navigation
 function toggleNavigation() {
-  const tabs = document.querySelector('.tabs');
+  const tabs = document.querySelector('nav ul');
   tabs.classList.toggle('open');
 }
 
 // Add event listener to navigation slide button
-document.querySelector('.nav-slide-button').addEventListener('click', toggleNavigation);
+document.querySelector('.checkbtn').addEventListener('click', toggleNavigation);
