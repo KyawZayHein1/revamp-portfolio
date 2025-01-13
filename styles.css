@@ -9,7 +9,7 @@ body {
 
 /* Hero Section */
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 60px 20px;
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 4px solid #ffffff33; /* Semi-transparent white border */
