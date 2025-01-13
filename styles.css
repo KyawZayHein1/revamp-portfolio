@@ -138,3 +138,27 @@ ul li i {
   margin-right: 10px;
   font-size: 18px;
 }
+
+/* Navigation Slide Button */
+.nav-slide-button {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.nav-slide-button:hover {
+  transform: translateY(-50%) translateX(10px);
+}
+
+.nav-slide-button i {
+  font-size: 20px;
+}
