@@ -10,8 +10,8 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .tab-button.active, .sub-tab-button.active {
-  background: #6e8efb;
+  background: #ff7e5f;
   color: white;
   font-weight: bold;
 }
@@ -113,7 +113,7 @@ body {
 .contact-icons {
   margin-right: 10px;
   font-size: 20px;
-  color: #6e8efb;
+  color: #ff7e5f;
 }
 
 /* Skills and List Styling */
@@ -134,7 +134,7 @@ ul li:last-child {
 }
 
 ul li i {
-  color: #6e8efb;
+  color: #ff7e5f;
   margin-right: 10px;
   font-size: 18px;
 }
