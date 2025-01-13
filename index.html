@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="hero">
+    <header class="hero">
         <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/Profile1.jpg" alt="Your Photo" class="avatar">
-        <h1 class="bordered">WELCOME TO MY PORTFOLIO.</h1>
-        <p>Ready to dive in and learn more about my journey in telecommunications!</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Are you ready to dive in to learn more about my journey in telecommunications?</p>
         <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" class="cta-button" download>Download CV</a>
-    </div>
-    <div class="container">
-        <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'AboutMe')"><i class="fas fa-user"></i> About Me</button>
-            <button class="tab-button" onclick="openTab(event, 'Contact')"><i class="fas fa-envelope"></i> Contact</button>
-            <button class="tab-button" onclick="openTab(event, 'Skills')"><i class="fas fa-cogs"></i> Skills</button>
-            <button class="tab-button" onclick="openTab(event, 'Education')"><i class="fas fa-graduation-cap"></i> Education</button>
-            <button class="tab-button" onclick="openTab(event, 'Experiences')"><i class="fas fa-briefcase"></i> Experiences</button>
-            <button class="tab-button" onclick="openTab(event, 'Certificates')"><i class="fas fa-certificate"></i> Certificates</button>
-        </div>
-        <!-- Tab Contents -->
-        <div class="tab-content" id="AboutMe">
+    </header>
+    <button class="nav-slide-button"><i class="fas fa-bars"></i></button>
+    <nav class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'AboutMe')"><i class="fas fa-user"></i> About Me</button>
+        <button class="tab-button" onclick="openTab(event, 'Contact')"><i class="fas fa-envelope"></i> Contact</button>
+        <button class="tab-button" onclick="openTab(event, 'Skills')"><i class="fas fa-cogs"></i> Skills</button>
+        <button class="tab-button" onclick="openTab(event, 'Education')"><i class="fas fa-graduation-cap"></i> Education</button>
+        <button class="tab-button" onclick="openTab(event, 'Experiences')"><i class="fas fa-briefcase"></i> Experiences</button>
+        <button class="tab-button" onclick="openTab(event, 'Certificates')"><i class="fas fa-certificate"></i> Certificates</button>
+    </nav>
+    <main class="container">
+        <section id="AboutMe" class="tab-content active">
             <h2>About Me</h2>
-            <p>With 8 years in telecommunications, I bridge technology and efficiency in every project.</p>
-        </div>
-        <div class="tab-content" id="Contact">
+            <p>With 8 years in telecommunications, I’ve navigated the intricate pathways of network operations and team leadership. My mission is to bridge technology and efficiency in every project I undertake.</p>
+        </section>
+        <section id="Contact" class="tab-content">
             <h2>Contact</h2>
             <ul class="contact-list">
-                <li><i class="fas fa-phone"></i> Phone: +959798939984</li>
-                <li><i class="fas fa-envelope"></i> Email: kyawzayhein528@gmail.com</li>
-                <li><i class="fas fa-map-marker-alt"></i> Address: Yangon, Myanmar</li>
-            </ul>    
-        </div>
-        <div class="tab-content" id="Skills">
+                <li><i class="fas fa-phone contact-icons"></i> Phone: +959798939984</li>
+                <li><i class="fas fa-envelope contact-icons"></i> Email: kyawzayhein528@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt contact-icons"></i> Address: Yangon, Myanmar</li>
+            </ul>
+        </section>
+        <section id="Skills" class="tab-content">
             <h2>Skills</h2>
             <ul>
                 <li><i class="fas fa-wrench"></i> Network maintenance and troubleshooting</li>
@@ -47,32 +47,32 @@
                 <li><i class="fas fa-tasks"></i> Technical operations planning and execution</li>
                 <li><i class="fas fa-handshake"></i> Customer relationship management</li>
                 <li><i class="fas fa-brain"></i> Strong problem-solving and decision-making abilities</li>
-                <li><i class="fas fa-comments"></i> Excellent communication skills</li>
+                <li><i class="fas fa-comments"></i> Excellent communication and interpersonal skills</li>
                 <li><i class="fas fa-chart-line"></i> Data Analysis</li>
                 <li><i class="fas fa-database"></i> ETL Process</li>
                 <li><i class="fas fa-chart-bar"></i> Power BI</li>
             </ul>
-        </div>
-        <div class="tab-content" id="Education">
+        </section>
+        <section id="Education" class="tab-content">
             <h2>Education</h2>
-            <p>Bachelor of Engineering (Electronic Communication Engineering), University of Technology, 2015</p>
-        </div>
-        <div class="tab-content" id="Experiences">
+            <p>Bachelor of Engineering (Electronic Communication Engineering), University of Technology (Yatanarpon Cyber City), 2015</p>
+        </section>
+        <section id="Experiences" class="tab-content">
             <h2>Experiences</h2>
             <div class="sub-tabs">
-                <button class="sub-tab-button" data-target="Company1">ERICSSON Myanmar</button>
-                <button class="sub-tab-button" data-target="Company2">TMH Public Holding</button>
-                <button class="sub-tab-button" data-target="Company3">MYTEL Telecom</button>
-                <button class="sub-tab-button" data-target="Company4">Horizon Telecom</button>
-                <button class="sub-tab-button" data-target="Company5">Shwe Emperor Group</button>
-                <button class="sub-tab-button" data-target="Company6">MPT</button>
+                <button class="sub-tab-button active" onclick="openSubTab(event, 'Company1')">ERICSSON Myanmar Company Limited</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company2')">TMH Public Holding Company Limited</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company3')">MYTEL Telecom International Company Limited</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company4')">Horizon Telecom International Company Limited</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company5')">Shwe Emperor Group of Company Limited</button>
+                <button class="sub-tab-button" onclick="openSubTab(event, 'Company6')">MPT (Myanmar Post and Telecommunications)</button>
             </div>
-            <div class="sub-tab-content" id="Company1">
-                <h3>ERICSSON Myanmar</h3>
+            <div id="Company1" class="sub-tab-content active">
+                <h3>ERICSSON Myanmar Company Limited</h3>
                 <p>Field Service Operation Engineer (2015 - 2017)</p>
                 <ul>
                     <li>Conducted corrective and preventive maintenance, resolving issues within a 3-hour SLA.</li>
-                    <li>Troubleshot and resolved site alarms and downtime, ensuring uninterrupted network operations.</li> 
+                    <li>Troubleshot and resolved site alarms and downtime, ensuring uninterrupted network operations.</li>
                     <li>Performed regular device maintenance, including air-filter cleaning, cable repair, and inspections.</li>
                     <li>Managed and supervised 115 sites across multiple townships.</li>
                 </ul>
@@ -81,20 +81,20 @@
                 <h3>TMH Public Holding Company Limited</h3>
                 <p>FO Transmission Engineer (2017 - 2018)</p>
                 <ul>
-                    <li>Utilized NMS server and third-party devices (e.g., Secure CRT, Telnet) for network control and configuration.</li> 
-                    <li>Managed Huawei DWDM, ZTE DWDM, RTN, and IP Transmission technologies.</li> 
-                    <li>Oversaw LSPs for transmission link restoration within SLA.</li> 
+                    <li>Utilized NMS server and third-party devices (e.g., Secure CRT, Telnet) for network control and configuration.</li>
+                    <li>Managed Huawei DWDM, ZTE DWDM, RTN, and IP Transmission technologies.</li>
+                    <li>Oversaw LSPs for transmission link restoration within SLA.</li>
                     <li>Provided troubleshooting and support for fixed access network and collaborated with onsite engineers and monitoring teams.</li>
-                </ul>    
+                </ul>
             </div>
             <div id="Company3" class="sub-tab-content">
                 <h3>MYTEL Telecom International Company Limited</h3>
                 <p>Operation Control Engineer (2018 - 2021)</p>
                 <ul>
-                    <li>Handled maintenance, emergency case handling, and new On Air sites planning.</li> 
-                    <li>Managed all BTS sites nationwide, ensuring compliance with SLA requirements.</li> 
+                    <li>Handled maintenance, emergency case handling, and new On Air sites planning.</li>
+                    <li>Managed all BTS sites nationwide, ensuring compliance with SLA requirements.</li>
                     <li>Coordinated with LSPs and field teams for On Air sites, covering transmission, power, and radio aspects.</li>
-                </ul>    
+                </ul>
             </div>
             <div id="Company4" class="sub-tab-content">
                 <h3>Horizon Telecom International Company Limited</h3>
@@ -106,9 +106,9 @@
                     <li>Arrange the site preparation.</li>
                     <li>Familiar with Special technicial operations.</li>
                     <li>Familiar with BCCS system , MBCCS System , AAA system.</li>
-                    <li>To assign to team leader, new install and remaining complain</li> 
+                    <li>To assign to team leader, new install and remaining complain</li>
                     <li>To report result in the day for CE0 and BOD.</li>
-                    <li>If have VIP complain, immediately assign to team leader.</li> 
+                    <li>If have VIP complain, immediately assign to team leader.</li>
                     <li>Make plan daily target and check HO CC complain.</li>
                     <li>Adjust with sale team, day by day plan.</li>
                     <li>Checking team leader report new customer result and complain report.</li>
@@ -153,7 +153,8 @@
                 </ul>
             </div>
         </div>
-        <div class="tab-content" id="Certificates">
+
+        <div id="Certificates" class="tab-content">
             <h2>Certificates</h2>
             <div class="sub-tabs">
                 <button class="sub-tab-button active" onclick="openSubTab(event, 'CCNA-Certificate')">CCNA Certificate</button>
@@ -165,7 +166,7 @@
                 <button class="sub-tab-button" onclick="openSubTab(event, 'PowerBI')">PowerBI</button>
                 <button class="sub-tab-button" onclick="openSubTab(event, 'MPT')">MPT</button>
             </div>
-            <div class="sub-tab-content" id="CCNA-Certificate">
+            <div id="CCNA-Certificate" class="sub-tab-content">
                 <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CCNA.png" alt="CCNA Certificate" class="responsive-image">
             </div>
             <div id="BE-EC" class="sub-tab-content">
@@ -192,7 +193,7 @@
             </div>
             <div id="MPT" class="sub-tab-content">
                 <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/IPNetworkingTechnologyFundamental(MPT).jpg" alt="MPT" class="responsive-image">
-            </div>    
+            </div>
         </div>
     </div>
 
