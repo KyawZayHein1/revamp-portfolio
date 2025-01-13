@@ -43,3 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
     defaultSubTab.click(); // Simulate a click to open the default sub-tab
   }
 });
+
+// Function to toggle navigation
+function toggleNavigation() {
+  const tabs = document.querySelector('.tabs');
+  tabs.classList.toggle('open');
+}
+
+// Add event listener to navigation slide button
+document.querySelector('.nav-slide-button').addEventListener('click', toggleNavigation);
