@@ -59,24 +59,71 @@ body {
   gap: 20px;
 }
 
+/* Horizontal Tabs */
 .tabs {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  max-width: 300px;
-  background: rgba(0, 0, 0, 0.6);
+  justify-content: flex-start;  /* Align tabs horizontally */
   padding: 15px;
-  border-radius: 15px; /* Rounded corners */
+  gap: 10px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  border: 2px solid #ffffff33; /* Semi-transparent white */
+  border: 2px solid #ffffff33;
 }
 
-.tab-button, .sub-tab-button {
+.tab-button {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
-  padding: 15px;
-  margin-bottom: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(5px);
+}
+
+.tab-button.active {
+  background: linear-gradient(to right, #DAA520, #ffcc00);
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  flex-grow: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Sub-tab Layout (Experience and Certificates) */
+.sub-tabs {
+  display: flex;
+  flex-direction: column;  /* Keep sub-tabs vertically stacked */
+  padding: 10px 0;
+}
+
+.sub-tab-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-bottom: 5px;
   text-align: left;
   font-size: 16px;
   border-radius: 10px; /* Rounded corners */
@@ -84,31 +131,30 @@ body {
   transition: all 0.3s ease;
 }
 
-.tab-button:hover, .sub-tab-button:hover {
+.sub-tab-button:hover {
   background: rgba(255, 255, 255, 0.4);
   transform: translateX(5px);
 }
 
-.tab-button.active, .sub-tab-button.active {
-  background: linear-gradient(to right, #DAA520, #ffcc00); /* Gold gradient */
+.sub-tab-button.active {
+  background: linear-gradient(to right, #DAA520, #ffcc00);
   color: #333;
   font-weight: bold;
-  transform: scale(1.05);
 }
 
-/* Tab and Sub-tab Contents */
-.tab-content, .sub-tab-content {
+/* Sub-tab Content */
+.sub-tab-content {
   display: none;
   padding: 20px;
-  border-radius: 15px; /* Rounded corners */
-  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
   color: #333;
   flex-grow: 1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.5s;
 }
 
-.tab-content.active, .sub-tab-content.active {
+.sub-tab-content.active {
   display: block;
 }
 
@@ -122,58 +168,13 @@ body {
   }
 }
 
-/* Contact List */
-.contact-list {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-list li {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.contact-icons {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #DAA520;
-}
-
-/* Skills and List Styling */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid #DAA520;
-  font-size: 16px;
-}
-
-ul li:last-child {
-  border-bottom: none;
-}
-
-ul li i {
-  color: #DAA520;
-  margin-right: 10px;
-  font-size: 18px;
-}
-
-/* Accessibility Enhancements: Focus States */
-.tab-button:focus, .sub-tab-button:focus, .cta-button:focus {
-  outline: 3px solid #ffcc00; /* Gold outline for focus */
-}
-
+/* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;  /* Stack tabs vertically on smaller screens */
+  }
+
   .container {
     flex-direction: column;
-  }
-  .tabs {
-    max-width: 100%;
   }
 }
