@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/Profile1.jpg" alt="Your Photo" class="avatar">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Are you ready to dive in to learn more about my journey in telecommunications?</p>
-        <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" class="cta-button" download>Download CV</a>
+    <header class="header-sec">
+        <label class="logo">My<span>Portfolio</span></label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#AboutMe" class="active">About Me</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experiences">Experiences</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+            </ul>
+        </nav>
     </header>
-    <button class="nav-slide-button"><i class="fas fa-bars"></i></button>
-    <nav class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'AboutMe')"><i class="fas fa-user"></i> About Me</button>
-        <button class="tab-button" onclick="openTab(event, 'Contact')"><i class="fas fa-envelope"></i> Contact</button>
-        <button class="tab-button" onclick="openTab(event, 'Skills')"><i class="fas fa-cogs"></i> Skills</button>
-        <button class="tab-button" onclick="openTab(event, 'Education')"><i class="fas fa-graduation-cap"></i> Education</button>
-        <button class="tab-button" onclick="openTab(event, 'Experiences')"><i class="fas fa-briefcase"></i> Experiences</button>
-        <button class="tab-button" onclick="openTab(event, 'Certificates')"><i class="fas fa-certificate"></i> Certificates</button>
-    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <h2>Are you ready to dive in to learn more about my journey in telecommunications?</h2>
+            <p>With 8 years in telecommunications, I’ve navigated the intricate pathways of network operations and team leadership. My mission is to bridge technology and efficiency in every project I undertake.</p>
+            <div class="btn-box">
+                <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" download>Download CV</a>
+                <a href="#Contact">Contact Me</a>
+            </div>
+        </div>
+    </section>
     <main class="container">
         <section id="AboutMe" class="tab-content active">
             <h2>About Me</h2>
