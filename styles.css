@@ -59,12 +59,12 @@ body {
   gap: 20px;
 }
 
-/* Horizontal Tabs */
+/* Main Tabs (Horizontal) */
 .tabs {
   display: flex;
-  flex-direction: row;  /* Arrange tabs horizontally */
-  padding: 15px;
-  gap: 10px;
+  flex-direction: row;  /* Horizontal layout for main tabs */
+  padding: 10px;
+  gap: 20px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -75,7 +75,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 15px 25px;
   text-align: center;
   font-size: 16px;
   border-radius: 10px; /* Rounded corners */
@@ -85,7 +85,7 @@ body {
 
 .tab-button:hover {
   background: rgba(255, 255, 255, 0.4);
-  transform: translateX(5px);
+  transform: translateY(-5px);
 }
 
 .tab-button.active {
@@ -111,11 +111,11 @@ body {
   display: block;
 }
 
-/* Sub-tab Layout (Experience and Certificates) */
+/* Sub-tabs Layout (Vertical) */
 .sub-tabs {
   display: flex;
   flex-direction: column;  /* Keep sub-tabs vertically stacked */
-  padding: 10px 0;
+  gap: 10px;
 }
 
 .sub-tab-button {
