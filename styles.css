@@ -11,6 +11,10 @@ header {
     background-color: #0078d4;
     color: white;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -26,15 +30,16 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: white;
+    text-decoration: underline;
 }
 
 main {
-    padding: 2rem;
+    padding: 5rem 2rem 2rem; /* Adjust padding to account for fixed header */
 }
 
 footer {
@@ -99,6 +104,23 @@ footer {
 /* Education Section */
 #education li {
     list-style-type: none;
+}
+
+/* Ensure toggle button is visible */
+#theme-toggle {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+}
+
+#theme-toggle:hover {
+    background-color: #005a9e;
 }
 
 /* Font Awesome Icons */
