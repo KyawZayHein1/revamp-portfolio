@@ -13,7 +13,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#skill">Skill</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle">Toggle Dark/Light Mode</button>
@@ -21,7 +21,7 @@
     </header>
     <main>
         <section id="about">
-            <h1>About Me</h1>
+            <h1 class="fade-in">About Me</h1>
             <p>A highly skilled and dedicated professional with a Bachelor's degree in Electronic Communication Engineering, offering extensive experience in the telecommunications industry. Seeking a challenging role as Operation Manager to utilize my expertise in network maintenance, troubleshooting, and team coordination to contribute to the success of a dynamic organization.</p>
         </section>
         <section id="experience">
@@ -52,38 +52,55 @@
         </section>
         <section id="education">
             <h2>Education</h2>
-            <p>Bachelor of Engineering (Electronic Communication Engineering), University of Technology (Yatanarpon Cyber City), 2015</p>
+            <li><i class="fas fa-graduation-cap"></i>Bachelor of Engineering (Electronic Communication Engineering), University of Technology (Yatanarpon Cyber City), 2015</li>
         </section>
-        <section id="expertise">
-            <h2>Expertise</h2>
-            <p>Network maintenance and troubleshooting</p>
-            <p>Telecommunications technologies: RAN/TRAN, DWDM, IP Transmission</p>
-            <p>NMS server operations</p>
-            <p>LSP coordination and management</p>
-            <p>Team supervision and coordination</p>
-            <p>Technical operations planning and execution</p>
-            <p>Customer relationship management</p>
-            <p>Strong problem-solving and decision-making abilities</p>
-            <p>Excellent communication and interpersonal skills</p>
+        <section id="skill">
+            <h2>Skill</h2>
+            <ul>
+                <li><i class="fas fa-wrench"></i> Network maintenance and troubleshooting</li>
+                <li><i class="fas fa-signal"></i> Telecommunications technologies: RAN/TRAN, DWDM, IP Transmission</li>
+                <li><i class="fas fa-server"></i> NMS server operations</li>
+                <li><i class="fas fa-project-diagram"></i> LSP coordination and management</li>
+                <li><i class="fas fa-users"></i> Team supervision and coordination</li>
+                <li><i class="fas fa-tasks"></i> Technical operations planning and execution</li>
+                <li><i class="fas fa-handshake"></i> Customer relationship management</li>
+                <li><i class="fas fa-brain"></i> Strong problem-solving and decision-making abilities</li>
+                <li><i class="fas fa-comments"></i> Excellent communication and interpersonal skills</li>
+                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+                <li><i class="fas fa-database"></i> ETL Process</li>
+                <li><i class="fas fa-chart-bar"></i> Power BI</li>
+            </ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Phone: +959798939984</p>
-            <p>Email: kyawzayhein528@gmail.com</p>
-            <p>Address: Yangon, Myanmar</p>
+            <ul class="contact-list">
+                <li><i class="fas fa-phone contact-icons"></i> Phone: +959798939984</li>
+                <li><i class="fas fa-envelope contact-icons"></i> Email: kyawzayhein528@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt contact-icons"></i> Address: Yangon, Myanmar</li>
+            </ul>  
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Kyaw Zay Hein</p>
     </footer>
 
-    <!-- JavaScript for theme toggle -->
+    <!-- JavaScript for theme toggle and smooth scroll -->
     <script>
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
 
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
