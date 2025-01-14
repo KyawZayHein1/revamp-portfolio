@@ -96,5 +96,10 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Education Section */
+#education li {
+    list-style-type: none;
+}
+
 /* Font Awesome Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
