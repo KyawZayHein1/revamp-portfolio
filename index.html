@@ -3,213 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Kyaw Zay Hein - Portfolio</title>
 </head>
 <body>
-    <header class="header-sec">
-        <label class="logo">My<span>Portfolio</span></label>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+    <header>
         <nav>
             <ul>
-                <li><a href="#AboutMe" class="active">About Me</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Experiences">Experiences</a></li>
-                <li><a href="#Certificates">Certificates</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <h2>Are you ready to dive in to learn more about my journey in telecommunications?</h2>
-            <p>With 8 years in telecommunications, I’ve navigated the intricate pathways of network operations and team leadership. My mission is to bridge technology and efficiency in every project I undertake.</p>
-            <div class="btn-box">
-                <a href="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CV%20Resume.pdf" download>Download CV</a>
-                <a href="#Contact">Contact Me</a>
-            </div>
-        </div>
-    </section>
-    <main class="container">
-        <section id="AboutMe" class="tab-content active">
-            <h2>About Me</h2>
-            <p>With 8 years in telecommunications, I’ve navigated the intricate pathways of network operations and team leadership. My mission is to bridge technology and efficiency in every project I undertake.</p>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>A highly skilled and dedicated professional with a Bachelor's degree in Electronic Communication Engineering, offering extensive experience in the telecommunications industry. Seeking a challenging role as Operation Manager to utilize my expertise in network maintenance, troubleshooting, and team coordination to contribute to the success of a dynamic organization.</p>
         </section>
-        <section id="Contact" class="tab-content">
-            <h2>Contact</h2>
-            <ul class="contact-list">
-                <li><i class="fas fa-phone contact-icons"></i> Phone: +959798939984</li>
-                <li><i class="fas fa-envelope contact-icons"></i> Email: kyawzayhein528@gmail.com</li>
-                <li><i class="fas fa-map-marker-alt contact-icons"></i> Address: Yangon, Myanmar</li>
-            </ul>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>FTTX Operation Manager</h3>
+            <p>Shwe Emperor Group of Company Limited (2022 - 2024)</p>
+            <h3>Operation Supervisor</h3>
+            <p>Horizon Telecom International Company Limited (2022 - 2022)</p>
+            <h3>Monitoring and Troubleshooting Specialist</h3>
+            <p>TMH Public Holding Company Limited (2021 - 2022)</p>
+            <h3>Operation Control Engineer</h3>
+            <p>MYTEL Telecom International Company Limited (2018 - 2021)</p>
+            <h3>FO Transmission Engineer</h3>
+            <p>TMH Public Holding Company Limited (2017 - 2018)</p>
+            <h3>Field Service Operation Engineer</h3>
+            <p>ERICSSON Myanmar Company Limited (2015 - 2017)</p>
         </section>
-        <section id="Skills" class="tab-content">
-            <h2>Skills</h2>
-            <ul>
-                <li><i class="fas fa-wrench"></i> Network maintenance and troubleshooting</li>
-                <li><i class="fas fa-signal"></i> Telecommunications technologies: RAN/TRAN, DWDM, IP Transmission</li>
-                <li><i class="fas fa-server"></i> NMS server operations</li>
-                <li><i class="fas fa-project-diagram"></i> LSP coordination and management</li>
-                <li><i class="fas fa-users"></i> Team supervision and coordination</li>
-                <li><i class="fas fa-tasks"></i> Technical operations planning and execution</li>
-                <li><i class="fas fa-handshake"></i> Customer relationship management</li>
-                <li><i class="fas fa-brain"></i> Strong problem-solving and decision-making abilities</li>
-                <li><i class="fas fa-comments"></i> Excellent communication and interpersonal skills</li>
-                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
-                <li><i class="fas fa-database"></i> ETL Process</li>
-                <li><i class="fas fa-chart-bar"></i> Power BI</li>
-            </ul>
-        </section>
-        <section id="Education" class="tab-content">
+        <section id="education">
             <h2>Education</h2>
             <p>Bachelor of Engineering (Electronic Communication Engineering), University of Technology (Yatanarpon Cyber City), 2015</p>
         </section>
-        <section id="Experiences" class="tab-content">
-            <h2>Experiences</h2>
-            <div class="sub-tabs">
-                <button class="sub-tab-button active" onclick="openSubTab(event, 'Company1')">ERICSSON Myanmar Company Limited</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Company2')">TMH Public Holding Company Limited</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Company3')">MYTEL Telecom International Company Limited</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Company4')">Horizon Telecom International Company Limited</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Company5')">Shwe Emperor Group of Company Limited</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Company6')">MPT (Myanmar Post and Telecommunications)</button>
-            </div>
-            <div id="Company1" class="sub-tab-content active">
-                <h3>ERICSSON Myanmar Company Limited</h3>
-                <p>Field Service Operation Engineer (2015 - 2017)</p>
-                <ul>
-                    <li>Conducted corrective and preventive maintenance, resolving issues within a 3-hour SLA.</li>
-                    <li>Troubleshot and resolved site alarms and downtime, ensuring uninterrupted network operations.</li>
-                    <li>Performed regular device maintenance, including air-filter cleaning, cable repair, and inspections.</li>
-                    <li>Managed and supervised 115 sites across multiple townships.</li>
-                </ul>
-            </div>
-            <div id="Company2" class="sub-tab-content">
-                <h3>TMH Public Holding Company Limited</h3>
-                <p>FO Transmission Engineer (2017 - 2018)</p>
-                <ul>
-                    <li>Utilized NMS server and third-party devices (e.g., Secure CRT, Telnet) for network control and configuration.</li>
-                    <li>Managed Huawei DWDM, ZTE DWDM, RTN, and IP Transmission technologies.</li>
-                    <li>Oversaw LSPs for transmission link restoration within SLA.</li>
-                    <li>Provided troubleshooting and support for fixed access network and collaborated with onsite engineers and monitoring teams.</li>
-                </ul>
-            </div>
-            <div id="Company3" class="sub-tab-content">
-                <h3>MYTEL Telecom International Company Limited</h3>
-                <p>Operation Control Engineer (2018 - 2021)</p>
-                <ul>
-                    <li>Handled maintenance, emergency case handling, and new On Air sites planning.</li>
-                    <li>Managed all BTS sites nationwide, ensuring compliance with SLA requirements.</li>
-                    <li>Coordinated with LSPs and field teams for On Air sites, covering transmission, power, and radio aspects.</li>
-                </ul>
-            </div>
-            <div id="Company4" class="sub-tab-content">
-                <h3>Horizon Telecom International Company Limited</h3>
-                <p>Operation Supervisor (2022 - 2022)</p>
-                <ul>
-                    <li>Control new installation and maintenance of all teams</li>
-                    <li>Control and checking stock list (ONU, FC, Cable, etc..)</li>
-                    <li>Control and checking good (Modem, Fast connector, Last mile) at end of each month.</li>
-                    <li>Arrange the site preparation.</li>
-                    <li>Familiar with Special technicial operations.</li>
-                    <li>Familiar with BCCS system , MBCCS System , AAA system.</li>
-                    <li>To assign to team leader, new install and remaining complain</li>
-                    <li>To report result in the day for CE0 and BOD.</li>
-                    <li>If have VIP complain, immediately assign to team leader.</li>
-                    <li>Make plan daily target and check HO CC complain.</li>
-                    <li>Adjust with sale team, day by day plan.</li>
-                    <li>Checking team leader report new customer result and complain report.</li>
-                    <li>Weekend checking all teams of tools (Power meter, Cleaver, Stripper, Cutter, Laser, etc..</li>
-                    <li>End month, checking the how many customers and calculate total customers and incentive.</li>
-                    <li>Adjust between sale and technician relationship and day by day more high result to get customer.</li>
-                </ul>
-            </div>
-            <div id="Company5" class="sub-tab-content">
-                <h3>Shwe Emperor Group of Company Limited</h3>
-                <p>FTTX Operation Manager (2022 - 2024)</p>
-                <ul>
-                    <li>Oversee the planning, implementation, and maintenance of Fiber to the x (FTTx) network operations.</li>
-                    <li>Manage a team of technicians and field engineers responsible for FTTx deployment, maintenance, and troubleshooting.</li>
-                    <li>Coordinate with cross-functional teams including engineering, construction, and customer service to ensure seamless execution of FTTx projects.</li>
-                    <li>Develop and implement operational strategies to optimize network performance, reliability, and scalability.</li>
-                    <li>Monitor network KPIs, analyze performance data, and implement corrective actions to meet service level agreements (SLAs) and quality standards.</li>
-                    <li>Ensure compliance with regulatory requirements, safety standards, and industry best practices in FTTx operations.</li>
-                    <li>Conduct regular site inspections, audits, and assessments to identify areas for improvement and address any issues promptly.</li>
-                    <li>Provide technical guidance and support to field teams, including training programs and resource allocation.</li>
-                    <li>Collaborate with vendors, contractors, and suppliers to procure materials, equipment, and services necessary for FTTx projects.</li>
-                    <li>Prepare reports, presentations, and documentation to communicate project status, performance metrics, and recommendations to senior management.</li>
-                </ul>    
-            </div>
-            <div id="Company6" class="sub-tab-content">
-                <h3>MPT (Myanmar Post and Telecommunications)</h3>
-                <p>Deputy Manager (Apr 2024 - Present)</p>
-                <ul>
-                    <li>Manage Door-to-Door (D2D) Sales Partners: Oversee and support D2D sales partners to ensure effective performance.</li>
-                    <li>Ensure Channel Compliance with KPIs: Monitor and ensure all sales channels comply with Key Performance Indicators (KPIs) and take corrective actions when necessary.</li>
-                    <li>Expand Regionalization: Develop and implement strategies to expand regional sales operations.</li>
-                    <li>Align with Sales Planning, Marketing, and CTO Teams: Collaborate with Sales Planning, Marketing, and CTO teams for new area launches, area expansions, Fiber Access Terminal top-ups, and reducing customer cancellations.</li>
-                    <li>Training Sales Agents and Shop Channel Staff: Conduct training sessions for sales agents and staff in shop channels.</li>
-                    <li>Manage and Support Shop Channel Sales: Oversee sales activities in own shops, franchise shops, and handset points of sale (POS).</li>
-                    <li>Manage Own Channel Sales: Supervise sales through own channels such as the web, call centers, and introductions by POS/ALT.</li>
-                    <li>Set Monthly Targets: Establish monthly sales targets.</li>
-                    <li>Consider Additional Measures: Evaluate and implement additional measures as needed to enhance sales performance.</li>
-                    <li>Manage Complaints from Sales Agencies: Address and resolve complaints from sales agencies.</li>
-                    <li>On-Ground Reporting: Provide on-ground reporting to the Sales Planning team.</li>
-                    <li>Assign Sales Agents in New Launch Areas: Assign sales agents in newly launched TWSPs (Telecom Wireless Service Providers).</li>
-                    <li>Evaluate and Develop Action Plans for Sales Agencies: Conduct evaluations of sales agencies and develop action plans for improvement.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="Certificates" class="tab-content">
-            <h2>Certificates</h2>
-            <div class="sub-tabs">
-                <button class="sub-tab-button active" onclick="openSubTab(event, 'CCNA-Certificate')">CCNA Certificate</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'BE-EC')">BE(EC)</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'Customer-Service-Management')">Customer Service Management</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'English')">English</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'A+')">A+</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'NE')">NE</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'PowerBI')">PowerBI</button>
-                <button class="sub-tab-button" onclick="openSubTab(event, 'MPT')">MPT</button>
-            </div>
-            <div id="CCNA-Certificate" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CCNA.png" alt="CCNA Certificate" class="responsive-image">
-            </div>
-            <div id="BE-EC" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/BE(EC).png" alt="BE(EC)" class="responsive-image">
-            </div>    
-            <div id="Customer-Service-Management" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/CustomerServiceManagement(HTI).png" alt="CustomerServiceManagement(HTI)" class="responsive-image">
-            </div>
-            <div id="English" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/English.png" alt="English" class="responsive-image">
-            </div>
-            <div id="A+" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/A+.png" alt="A+" class="responsive-image">
-            </div>
-            <div id="NE" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/NE.png" alt="NE" class="responsive-image">
-            </div>
-            <div id="PowerBI" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/PowerBI(IntegratingAIandMachinLearning).png" alt="PowerBI" class="responsive-image">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/PowerBI15Skills.png" alt="PowerBI" class="responsive-image">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/PowerBIDataFlowEssentialTraining.png" alt="PowerBI" class="responsive-image">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/PowerBIDataMethods.png" alt="PowerBI" class="responsive-image">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/PowerBITopSkills.png" alt="PowerBI" class="responsive-image">
-            </div>
-            <div id="MPT" class="sub-tab-content">
-                <img src="https://raw.githubusercontent.com/KyawZayHein1/portfolio/main/IPNetworkingTechnologyFundamental(MPT).jpg" alt="MPT" class="responsive-image">
-            </div>
-        </div>
-    </div>
-
-    <script src="scripts.js"></script>
+        <section id="expertise">
+            <h2>Expertise</h2>
+            <p>Network maintenance and troubleshooting</p>
+            <p>Telecommunications technologies: RAN/TRAN, DWDM, IP Transmission</p>
+            <p>NMS server operations</p>
+            <p>LSP coordination and management</p>
+            <p>Team supervision and coordination</p>
+            <p>Technical operations planning and execution</p>
+            <p>Customer relationship management</p>
+            <p>Strong problem-solving and decision-making abilities</p>
+            <p>Excellent communication and interpersonal skills</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: +959798939984</p>
+            <p>Email: kyawzayhein528@gmail.com</p>
+            <p>Address: No. 748(A), Marga (7) Street, 12 Ward, Southokkalarpa Township, Yangon, Myanmar</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kyaw Zay Hein</p>
+    </footer>
 </body>
 </html>
