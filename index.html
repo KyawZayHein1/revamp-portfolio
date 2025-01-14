@@ -16,6 +16,7 @@
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle">Toggle Dark/Light Mode</button>
         </nav>
     </header>
     <main>
@@ -27,16 +28,27 @@
             <h2>Experience</h2>
             <h3>FTTX Operation Manager</h3>
             <p>Shwe Emperor Group of Company Limited (2022 - 2024)</p>
+            <p>Oversee the planning, implementation, and maintenance of Fiber to the x (FTTx) network operations. Manage a team of technicians and field engineers responsible for FTTx deployment, maintenance, and troubleshooting. Coordinate with cross-functional teams including engineering, construction, and customer service to ensure seamless execution of FTTx projects. Develop and implement operational strategies to optimize network performance, reliability, and scalability. Monitor network KPIs, analyze performance data, and implement corrective actions to meet service level agreements (SLAs) and quality standards. Ensure compliance with regulatory requirements, safety standards, and industry best practices in FTTx operations. Conduct regular site inspections, audits, and assessments to identify areas for improvement and address any issues promptly. Provide technical guidance and support to field teams, including training programs and resource allocation. Collaborate with vendors, contractors, and suppliers to procure materials, equipment, and services necessary for FTTx projects. Prepare reports, presentations, and documentation to communicate project status, performance metrics, and recommendations to senior management.</p>
+
             <h3>Operation Supervisor</h3>
             <p>Horizon Telecom International Company Limited (2022 - 2022)</p>
+            <p>Controlled new installations and maintenance for all teams. Managed stock lists and performed regular checks on equipment. Arranged site preparations and ensured adherence to technical operations. Coordinated with team leaders, reported results to CEO and BOD, and handled VIP complaints. Developed daily targets, resolved HO CC complaints, and collaborated with sales teams. Checked team leader reports, customer results, and complaint reports. Conducted weekend checks on team tools and calculated customer statistics and incentives. Facilitated coordination between sales and technical teams to enhance customer satisfaction.</p>
+
             <h3>Monitoring and Troubleshooting Specialist</h3>
             <p>TMH Public Holding Company Limited (2021 - 2022)</p>
+            <p>Monitored and troubleshooted International Gateway (IGW) traffic and DWDM Backbone network. Collaborated with Hong Kong NOC for Metro DIA, IPVPN, and DIA services to banking and hotel clients. Conducted maintenance for the Data Center at Ngwe Saung Landing Station of MPT.</p>
+
             <h3>Operation Control Engineer</h3>
             <p>MYTEL Telecom International Company Limited (2018 - 2021)</p>
+            <p>Handled maintenance, emergency case handling, and new On Air sites planning. Managed all BTS sites nationwide, ensuring compliance with SLA requirements. Coordinated with LSPs and field teams for On Air sites, covering transmission, power, and radio aspects.</p>
+
             <h3>FO Transmission Engineer</h3>
             <p>TMH Public Holding Company Limited (2017 - 2018)</p>
+            <p>Utilized NMS server and third-party devices (e.g., Secure CRT, Telnet) for network control and configuration. Managed Huawei DWDM, ZTE DWDM, RTN, and IP Transmission technologies. Oversaw LSPs for transmission link restoration within SLA. Provided troubleshooting and support for fixed access network and collaborated with onsite engineers and monitoring teams.</p>
+
             <h3>Field Service Operation Engineer</h3>
             <p>ERICSSON Myanmar Company Limited (2015 - 2017)</p>
+            <p>Conducted corrective and preventive maintenance, resolving issues within a 3-hour SLA. Troubleshot and resolved site alarms and downtime, ensuring uninterrupted network operations. Performed regular device maintenance, including air-filter cleaning, cable repair, and inspections. Managed and supervised 115 sites across multiple townships.</p>
         </section>
         <section id="education">
             <h2>Education</h2>
@@ -58,11 +70,21 @@
             <h2>Contact</h2>
             <p>Phone: +959798939984</p>
             <p>Email: kyawzayhein528@gmail.com</p>
-            <p>Address: No. 748(A), Marga (7) Street, 12 Ward, Southokkalarpa Township, Yangon, Myanmar</p>
+            <p>Address: Yangon, Myanmar</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Kyaw Zay Hein</p>
     </footer>
+
+    <!-- JavaScript for theme toggle -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
