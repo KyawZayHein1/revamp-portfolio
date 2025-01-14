@@ -71,3 +71,30 @@ footer {
         opacity: 1;
     }
 }
+
+/* Contact Section */
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    margin-right: 10px;
+}
+
+/* Skill Section */
+#skill ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skill ul li {
+    margin-bottom: 10px;
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
