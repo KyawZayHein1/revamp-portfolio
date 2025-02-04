@@ -34,8 +34,8 @@ function openSubTab(evt, subTabName) {
 
 // Automatically set the default tab to open when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const defaultTab = document.querySelector(".tab-button.active");
-  const defaultSubTab = document.querySelector(".sub-tab-button.active");
+  const defaultTab = document.querySelector(".tab-button.default");
+  const defaultSubTab = document.querySelector(".sub-tab-button.default");
   if (defaultTab) {
     defaultTab.click(); // Simulate a click to open the default tab
   }
@@ -43,12 +43,3 @@ document.addEventListener("DOMContentLoaded", () => {
     defaultSubTab.click(); // Simulate a click to open the default sub-tab
   }
 });
-
-// Function to toggle navigation
-function toggleNavigation() {
-  const tabs = document.querySelector('nav ul');
-  tabs.classList.toggle('open');
-}
-
-// Add event listener to navigation slide button
-document.querySelector('.checkbtn').addEventListener('click', toggleNavigation);
