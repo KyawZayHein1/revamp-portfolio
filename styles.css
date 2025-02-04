@@ -1,127 +1,190 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298); /* Blue gradient */
+    color: #f3f3f3;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header {
-    background-color: #0078d4;
-    color: white;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
-}
-
-nav ul li a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-main {
-    padding: 5rem 2rem 2rem; /* Adjust padding to account for fixed header */
-}
-
-footer {
-    background-color: #0078d4;
-    color: white;
+  }
+  
+  /* Hero Section */
+  .hero {
     text-align: center;
-    padding: 1rem;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-.dark-mode header {
-    background-color: #1a1a1a;
-}
-
-.dark-mode footer {
-    background-color: #1a1a1a;
-}
-
-.dark-mode nav ul li a {
-    color: #f4f4f4;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Contact Section */
-.contact-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.contact-list li {
-    margin-bottom: 10px;
-}
-
-.contact-icons {
-    margin-right: 10px;
-}
-
-/* Skill Section */
-#skill ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#skill ul li {
-    margin-bottom: 10px;
-}
-
-/* Education Section */
-#education li {
-    list-style-type: none;
-}
-
-/* Ensure toggle button is visible */
-#theme-toggle {
-    background-color: #0078d4;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #ffffff33; /* Semi-transparent white border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #DAA520; /* Gold border */
+  }
+  
+  .bordered {
+    border: 3px solid #DAA520; /* Gold */
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px; /* Rounded corners */
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    background: linear-gradient(to right, #ff9900, #ffcc00); /* Gradient gold */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px; /* Fully rounded button */
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(to right, #cc7a00, #e6b800); /* Darker gold gradient */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Container and Tabs */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff33; /* Semi-transparent white */
+  }
+  
+  .tab-button, .sub-tab-button {
+    background: rgba(255, 255, 255, 0.2);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 10px; /* Rounded corners */
     cursor: pointer;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
-}
-
-#theme-toggle:hover {
-    background-color: #005a9e;
-}
-
-/* Font Awesome Icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+    transition: all 0.3s ease;
+  }
+  
+  .tab-button:hover, .sub-tab-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(5px);
+  }
+  
+  .tab-button.active, .sub-tab-button.active {
+    background: linear-gradient(to right, #DAA520, #ffcc00); /* Gold gradient */
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+  
+  .tab-content, .sub-tab-content {
+    display: none;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    color: #333;
+    flex-grow: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+  }
+  
+  .tab-content.active, .sub-tab-content.active {
+    display: block;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Contact List */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .contact-icons {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #DAA520;
+  }
+  
+  /* Skills and List Styling */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #DAA520;
+    font-size: 16px;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  ul li i {
+    color: #DAA520;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Social Links */
+  .social-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #DAA520;
+    font-size: 20px;
+  }
+  
+  .social-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Specific Styles for Experiences and Certificates Tabs */
+  #Experiences, #Certificates {
+    color: #DAA520; /* Gold color for better visibility */
+  }
+  
+  .tab-button#Experiences, .tab-button#Certificates {
+    color: #DAA520; /* Gold color for better visibility */
+  }
