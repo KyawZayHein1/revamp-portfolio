@@ -46,145 +46,147 @@ body {
   }
   
   .cta-button:hover {
-    background: linear-gradient(to right, #cc7a00, #e6b800); /* Darker gold gradient */
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #cc7a00, #e6b800); /* Darker
+  .cta-button:hover {
+  background: linear-gradient(to right, #cc7a00, #e6b800); /* Darker gold gradient */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Container and Tabs */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffffff33; /* Semi-transparent white */
+}
+
+.tab-button, .sub-tab-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover, .sub-tab-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(5px);
+}
+
+.tab-button.active, .sub-tab-button.active {
+  background: linear-gradient(to right, #DAA520, #ffcc00); /* Gold gradient */
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.tab-content, .sub-tab-content {
+  display: none;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  color: #333;
+  flex-grow: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s;
+}
+
+.tab-content.active, .sub-tab-content.active {
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  /* Container and Tabs */
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-    gap: 20px;
+  to {
+    opacity: 1;
   }
-  
-  .tabs {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-width: 300px;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border: 2px solid #ffffff33; /* Semi-transparent white */
-  }
-  
-  .tab-button, .sub-tab-button {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 16px;
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .tab-button:hover, .sub-tab-button:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: translateX(5px);
-  }
-  
-  .tab-button.active, .sub-tab-button.active {
-    background: linear-gradient(to right, #DAA520, #ffcc00); /* Gold gradient */
-    color: #333;
-    font-weight: bold;
-    transform: scale(1.05);
-  }
-  
-  .tab-content, .sub-tab-content {
-    display: none;
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    color: #333;
-    flex-grow: 1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.5s;
-  }
-  
-  .tab-content.active, .sub-tab-content.active {
-    display: block;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  /* Contact List */
-  .contact-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-list li {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .contact-icons {
-    margin-right: 10px;
-    font-size: 20px;
-    color: #DAA520;
-  }
-  
-  /* Skills and List Styling */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  ul li {
-    padding: 8px 0;
-    border-bottom: 1px solid #DAA520;
-    font-size: 16px;
-  }
-  
-  ul li:last-child {
-    border-bottom: none;
-  }
-  
-  ul li i {
-    color: #DAA520;
-    margin-right: 10px;
-    font-size: 18px;
-  }
-  
-  /* Social Links */
-  .social-links {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #DAA520;
-    font-size: 20px;
-  }
-  
-  .social-links a:hover {
-    color: #ffcc00;
-  }
-  
-  /* Specific Styles for Experiences and Certificates Tabs */
-  #Experiences, #Certificates {
-    color: #DAA520; /* Gold color for better visibility */
-  }
-  
-  .tab-button#Experiences, .tab-button#Certificates {
-    color: #DAA520; /* Gold color for better visibility */
-  }
+}
+
+/* Contact List */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-icons {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #DAA520;
+}
+
+/* Skills and List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #DAA520;
+  font-size: 16px;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li i {
+  color: #DAA520;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #DAA520;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Specific Styles for Experiences and Certificates Tabs */
+#Experiences, #Certificates {
+  color: #DAA520; /* Gold color for better visibility */
+}
+
+.tab-button#Experiences, .tab-button#Certificates {
+  color: #DAA520; /* Gold color for better visibility */
+}  
